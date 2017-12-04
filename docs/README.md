@@ -5,7 +5,7 @@
     <script language="JavaScript">
         function jump()
         {
-            window.location ="itms-services://?action=download-manifest&url=https://github.com/wubaofeng111/AppInstaller/blob/master/manifest.plist";
+            window.location ="itms-services://?action=download-manifest&url='https://github.com/wubaofeng111/AppInstaller/blob/master/manifest.plist'";
         }
     </script>
 </html>
