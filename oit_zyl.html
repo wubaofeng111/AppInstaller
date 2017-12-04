@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>状元楼</title>
+    
+    <style>
+        #image{
+            width:100%;
+            height:100%;
+        }
+    body{
+        padding:0;
+        margin:0;
+    }
+    </style>
+    <script src="jquery-latest.js"></script>
+    <script language="JavaScript">
+        //打开（下载）App
+        function openApp() {
+            var ua = window.navigator.userAgent.toLowerCase();
+
+            var ios = navigator.userAgent.toLowerCase();
+            
+            if (/iphone|ipad|ipod/.test(ios)) {
+          
+                $("#image").attr("src","iOSOpen.png");
+                
+                if (ios.match(/MicroMessenger/i) == "micromessenger") { //微信
+                    
+                    document.getElementById("browserT").style.display = "";//隐藏
+                } else if (ios.match(/QQ/i) == "qq") { //QQ
+
+                    document.getElementById("browserT").style.display = "";//隐藏
+                } else {
+                    document.getElementById("browserT").style.display = "none";//隐藏
+                    if (/ipad/.test(ios)) {
+                        
+                        window.location = "itms-services://?action=download-manifest&url=https://www.oitor.com/Oit_App/Config/Oit_Zyl.plist";//ios下载地址 Pad
+                    }else if(/iphone|ipod/.test(ios)){
+                        
+                       window.location = "itms-services://?action=download-manifest&url=https://www.oitor.com/Oit_App/Config/Oit_Zyl.plist";//ios下载地址Phone
+                    }
+                }
+
+                } else if (/android/.test(ios)) {
+                    $("#image").attr("src","androidOpen.png");
+                    if (ios.match(/MicroMessenger/i) == "micromessenger") { //微信
+
+                        document.getElementById("browserT").style.display = "";//隐藏
+                    } else if (ios.match(/QQ/i) == "qq") { //QQ
+
+                        document.getElementById("browserT").style.display = "";//隐藏
+                    } else {
+               
+                        document.getElementById("browserT").style.display = "none";//隐藏
+                        window.location = "https://www.oitor.com/Oit_App/AppResource/Zyl_Phone.apk"; //android下载地址
+                    }
+
+                }
+
+
+            }
+
+    </script>
+</head>
+<body onload="openApp()" >
+<div id="browserT" style="display:none">
+    <img id = "image" src = ""/>
+</div>
+
+
+</body>
+
+</html>
