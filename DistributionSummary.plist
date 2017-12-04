@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ddyt.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>DBCB2B6705EC22DEA997A2065A928C1015D9AB91</string>
+				<key>dateExpires</key>
+				<string>2018/12/1</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>L5FNMDX3AH.com.iplan.ddytor</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>L5FNMDX3AH</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>L5FNMDX3AH.com.iplan.ddytor</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>Ddyt.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>c4880447-4942-4425-a7f1-a78f8391bc6e</string>
+				<key>name</key>
+				<string>xxxxpriofile</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>L5FNMDX3AH</string>
+				<key>name</key>
+				<string>Shanghai iPlan Advertisement Co., Ltd.</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
