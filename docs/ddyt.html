@@ -1,0 +1,12 @@
+<html>
+    <body onload="jump()">
+        <button onclick="">点击安装</button>
+    </body>
+    <script language="JavaScript">
+        function jump()
+        {
+            window.location ="itms-services://?action=download-manifest&url=https://github.com/wubaofeng111/AppInstaller/blob/master/manifest.plist";
+        }
+    </script>
+</html>
+
